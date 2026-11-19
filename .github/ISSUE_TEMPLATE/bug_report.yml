@@ -1,0 +1,32 @@
+name: Bug report
+description: Something does not work
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you did, and what happened instead. Unpolished is fine.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: What `--version` prints, or the release you installed.
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: OS
+      placeholder: macOS 15.2, Arch Linux, Windows 11
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Relevant config, a screenshot if it is visual, or a recording if it is motion.
+    validations:
+      required: false
